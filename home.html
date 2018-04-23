@@ -1,0 +1,32 @@
+<div id="home">
+    <div id="headingPadder"></div>
+    <div id="projectDetails">
+        <strong>User Manuel</strong>
+        <ul>
+            <li>In order to retrieve data, enter a date range as well as the stock symbol associated with a security. The application
+                will return a set of summary statisitcs as well as graphical representations of the distribution and autocorrelation
+                of returns</li>
+            <li>If an incorrect date range is entered, the application will display an error. For example, if the date range
+                is outside of the time frame that a security has been publicly traded, an error will display along with the
+                acceptable date range</li>
+            <li>For data sparsity reasons, date ranges of fewer than 31 trading days are not permitted</li>
+            <li>The tables depicted in this application are summary statistics for log returns based upon daily adjusted closing
+                prices taken from Quandl, specifically the EOD database. For example, a date range of 9/1/2017 through 11/3/2017
+                uses the daily adjusted closing price on 10/31/2017 as a base to compute the daily log return on 9/1/2017</li>
+            <li>For a complete list of securities available via this application, see the EOD database description on the
+                <a href="https://www.quandl.com/data/EOD-End-of-Day-US-Stock-Prices" target="_blank">Quandl website</a>
+            </li>
+            <li>If a starting or ending date is a market closure, the prior available trading day is used as a substitute. Days
+                that the market is closed are ignored by this applicaiton</li>
+            <li>When computing monthly returns, the calendar month associated with the starting and ending dates is used. For
+                example, a date range of 9/1/2017 through 11/3/2017 would generate a holding period from the last trading
+                day of October 2017 through the last trading day of November 2017</li>
+            <li>When computing weekly returns, the last trading day of the calendar week in which the starting and ending dates
+                fall is used. For example, a starting date of 10/5/2017 and ending date of 11/16/2017 would use the 10/6/2017
+                and 11/16/2017 adjusted closing prices</li>
+            <li>Because of the date rounding associated with weekly and monthly returns, slight differences in culumaltive returns
+                over a period will be noticable. For the most cumulative returns over a period, see the daily cumulative
+                returns entry in the summary statistics table</li>
+        </ul>
+    </div>
+</div>
